@@ -1,0 +1,19 @@
+{
+  "name": "mm-site-spa-maker",
+  "mode": "srv",
+  "refs": {
+    "files": "dist"
+  },
+  "refs/heads/alpha": {
+    "probe": "http://d1.iworld.vip/maker/version",
+    "deployment": "mm-site-spa-maker-d1@c1.mm-site"
+  },
+  "refs/heads/master": {
+    "probe": "https://t1.iworld.vip/maker/version",
+    "deployment": "mm-site-spa-maker-t1@c1.mm-site"
+  },
+  "refs/tags": {
+    "probe": "https://iworld.vip/maker/version",
+    "deployment": "mm-site-spa-maker-v1@c1.mm-site"
+  }
+}
